@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-lg-3 col-md-3 col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="text-center">
+          <p>
+            <img src="<%= current_user.avatars.last.image %>" alt="" class="img-circle img-thumbnail img-responsive">
+          </p>
+          <h3><%= current_user.name %></h3>
+          <h4 class="text-muted"><%= current_user.tagline %></h4>
+          <h5 class="text-muted"><%= current_user.likes %></h5>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-9 col-md-9 col-sm-9">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="text-center">
+          <h3>New Blog Post</h3>
+          <% if @post && @post.errors.any? %>
+            <h3><%= pluralize(@post.errors.count, "error") %> stopped this post from being added:</h3>
+            <% @post.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          <% end %>
+          <%= form_tag "/posts", method: :post do %>
+            <input type="text" name="title" class="form-control" placeholder="Title" value="<%= @post.title %>">
+            <!-- <input hidden name="user_id" value="<%= current_user.id %>" type="text"> -->
+            <br>
+            <textarea name="content" class="form-control" rows="20" placeholder="Blog Content"><%= @post.content %></textarea>
+            <br>
+            <button type="submit" class="btn btn-primary btn-lg pull-right">Submit</button>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

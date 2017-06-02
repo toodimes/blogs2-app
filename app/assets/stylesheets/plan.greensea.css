@@ -19,7 +19,7 @@
 .input-group-addon.has-checkbox.checked .ctrl-overlay,
 .input-group-addon.has-radio.checked .ctrl-overlay {
   content: "\f00c";
-  background-color: #2980B9;
+  background-color: #16A085;
   -webkit-transition: background-color linear 0.2s;
   -o-transition: background-color linear 0.2s;
   transition: background-color linear 0.2s;
@@ -34,7 +34,7 @@
 .radio:hover,
 .input-group-addon.has-checkbox:hover,
 .input-group-addon.has-radio:hover {
-  color: #2980B9;
+  color: #16A085;
   -webkit-transition: color linear 0.2s;
   -o-transition: color linear 0.2s;
   transition: color linear 0.2s;
@@ -83,7 +83,7 @@
 }
 .input-group-addon.has-checkbox.checked .ctrl-overlay,
 .input-group-addon.has-radio.checked .ctrl-overlay {
-  color: #2980B9;
+  color: #16A085;
   background-color: transparent;
 }
 .input-focused .input-group-addon.checked > .ctrl-overlay {
@@ -167,7 +167,7 @@
   display: none;
 }
 .toggle.on {
-  background-color: #2980B9;
+  background-color: #16A085;
   -webkit-transition: background-color 0.3s ease-out;
   -o-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
@@ -248,7 +248,7 @@
 .table-bordered.bordered-primary td,
 .table-bordered.bordered-primary tr,
 .table-bordered.bordered-primary th {
-  border-color: #2980B9;
+  border-color: #16A085;
 }
 .table-bordered.bordered-danger,
 .table-bordered.bordered-danger td,
@@ -281,7 +281,7 @@
   border-color: #2C3E50;
 }
 table.header-primary thead {
-  background-color: #2980B9;
+  background-color: #16A085;
   color: #fff;
 }
 table.header-primary tbody > tr:first-child > td {
@@ -344,7 +344,7 @@ table.header-inverse tbody > tr:first-child > td {
   transition: all 0.2s ease;
 }
 .btn-transparent.btn-primary {
-  color: #2980B9;
+  color: #16A085;
 }
 .btn-transparent.btn-danger {
   color: #d94d3f;
@@ -602,26 +602,26 @@ fieldset[disabled] .btn-rss.focus {
 }
 .btn-turn-primary:hover {
   color: #fff;
-  background-color: #2980B9;
-  border-color: #2980B9;
+  background-color: #16A085;
+  border-color: #16A085;
 }
 .btn-turn-primary:hover:focus,
 .btn-turn-primary:hover.focus {
   color: #fff;
-  background-color: #3896d3;
-  border-color: #3896d3;
+  background-color: #1bc4a3;
+  border-color: #1bc4a3;
 }
 .btn-turn-primary:hover:hover {
   color: #fff;
-  background-color: #3896d3;
-  border-color: #3896d3;
+  background-color: #1bc4a3;
+  border-color: #1bc4a3;
 }
 .btn-turn-primary:hover:active,
 .btn-turn-primary:hover.active,
 .open > .dropdown-toggle.btn-turn-primary:hover {
   color: #fff;
-  background-color: #3896d3;
-  border-color: #3896d3;
+  background-color: #1bc4a3;
+  border-color: #1bc4a3;
 }
 .btn-turn-primary:hover:active:hover,
 .btn-turn-primary:hover.active:hover,
@@ -633,8 +633,8 @@ fieldset[disabled] .btn-rss.focus {
 .btn-turn-primary:hover.active.focus,
 .open > .dropdown-toggle.btn-turn-primary:hover.focus {
   color: #fff;
-  background-color: #3896d3;
-  border-color: #3896d3;
+  background-color: #1bc4a3;
+  border-color: #1bc4a3;
 }
 .btn-turn-primary:hover:active,
 .btn-turn-primary:hover.active,
@@ -650,11 +650,11 @@ fieldset[disabled] .btn-turn-primary:hover:focus,
 .btn-turn-primary:hover.disabled.focus,
 .btn-turn-primary:hover[disabled].focus,
 fieldset[disabled] .btn-turn-primary:hover.focus {
-  background-color: #2980B9;
-  border-color: #2980B9;
+  background-color: #16A085;
+  border-color: #16A085;
 }
 .btn-turn-primary:hover .badge {
-  color: #2980B9;
+  color: #16A085;
   background-color: #fff;
 }
 .btn-turn-warning:hover {
@@ -897,7 +897,7 @@ fieldset[disabled] .btn-turn-info:hover.focus {
   background-color: #476674;
   border: 0;
   border-radius: 4px;
-  border-left: 0 solid #2980B9;
+  border-left: 0 solid #16A085;
   -webkit-transition: border-left-width 0.3s linear;
   -o-transition: border-left-width 0.3s linear;
   transition: border-left-width 0.3s linear;
@@ -941,10 +941,10 @@ a.accordion-toggle:hover {
   font-weight: bold;
 }
 .nav-stacked.nav-spaced li a:hover {
-  color: #2980B9;
+  color: #16A085;
 }
 .nav-stacked.nav-spaced li.active a {
-  background-color: #2980B9;
+  background-color: #16A085;
   color: #fff;
 }
 .nav-stacked.nav-spaced li.active .label {
@@ -1110,7 +1110,7 @@ Version 4.0.2
   font-size: 1.5em;
   line-height: .5;
   text-align: center;
-  color: #20638f;
+  color: #107360;
   position: absolute;
   top: 0;
   left: 0;
@@ -1191,7 +1191,7 @@ Version 4.0.2
 .vjs-flat-skin .vjs-play-control {
   width: 5em;
   cursor: pointer;
-  color: #2980B9;
+  color: #16A085;
 }
 .vjs-flat-skin .vjs-play-control:before {
   content: "\f04b";
@@ -1254,7 +1254,7 @@ Version 4.0.2
   top: 0;
   left: 0;
   height: 0.6em;
-  background-color: #2980B9;
+  background-color: #16A085;
   /*background: #66A8CC
     url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC)
     -50% 0 repeat;*/
@@ -1334,7 +1334,7 @@ Version 4.0.2
     Also using a paralax effect to make the lines move backwards.
       The -50% left position makes that happen.
   */
-  background-color: #2980B9 /*background: #66A8CC
+  background-color: #16A085 /*background: #66A8CC
     url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC)
     -50% 0 repeat;*/;
 }
@@ -1425,8 +1425,8 @@ Version 4.0.2
 .vjs-flat-skin:hover .vjs-big-play-button,
 .vjs-flat-skin .vjs-big-play-button:focus {
   outline: 0;
-  color: #2980B9;
-  border: 0.3em solid #2980B9;
+  color: #16A085;
+  border: 0.3em solid #16A085;
   -webkit-transition: border-color 0.3s linear;
   -o-transition: border-color 0.3s linear;
   transition: border-color 0.3s linear;
@@ -1659,7 +1659,7 @@ Version 4.0.2
   height: 100px;
   border-radius: 50%;
   border: 2px solid #f7f8f9;
-  background-color: #2980B9;
+  background-color: #16A085;
   margin-bottom: 30px;
   margin-right: 20px;
   -webkit-box-sizing: content-box;
@@ -1687,64 +1687,64 @@ x:-o-prefocus,
   font-weight: 100;
 }
 .progress-0 {
-  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(90deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(90deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-5 {
-  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(108deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(108deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-10 {
-  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(126deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(126deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-15 {
-  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(144deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(144deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-20 {
-  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(162deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(162deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-25 {
-  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(180deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(180deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-30 {
-  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(198deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(198deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-35 {
-  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(216deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(216deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-40 {
-  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(234deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(234deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-45 {
-  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(252deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(90deg, #f7f8f9 50%, transparent 50%, transparent), linear-gradient(252deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-50 {
-  background-image: linear-gradient(270deg, #2980B9 50%, transparent 50%, transparent), linear-gradient(270deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(270deg, #16A085 50%, transparent 50%, transparent), linear-gradient(270deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-55 {
-  background-image: linear-gradient(288deg, #2980B9 50%, transparent 50%, transparent), linear-gradient(270deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(288deg, #16A085 50%, transparent 50%, transparent), linear-gradient(270deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-60 {
-  background-image: linear-gradient(306deg, #2980B9 50%, transparent 50%, transparent), linear-gradient(270deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(306deg, #16A085 50%, transparent 50%, transparent), linear-gradient(270deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-65 {
-  background-image: linear-gradient(324deg, #2980B9 50%, transparent 50%, transparent), linear-gradient(270deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(324deg, #16A085 50%, transparent 50%, transparent), linear-gradient(270deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-70 {
-  background-image: linear-gradient(342deg, #2980B9 50%, transparent 50%, transparent), linear-gradient(270deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(342deg, #16A085 50%, transparent 50%, transparent), linear-gradient(270deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-75 {
-  background-image: linear-gradient(360deg, #2980B9 50%, transparent 50%, transparent), linear-gradient(270deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(360deg, #16A085 50%, transparent 50%, transparent), linear-gradient(270deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-80 {
-  background-image: linear-gradient(378deg, #2980B9 50%, transparent 50%, transparent), linear-gradient(270deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(378deg, #16A085 50%, transparent 50%, transparent), linear-gradient(270deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-85 {
-  background-image: linear-gradient(396deg, #2980B9 50%, transparent 50%, transparent), linear-gradient(270deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(396deg, #16A085 50%, transparent 50%, transparent), linear-gradient(270deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-90 {
-  background-image: linear-gradient(414deg, #2980B9 50%, transparent 50%, transparent), linear-gradient(270deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(414deg, #16A085 50%, transparent 50%, transparent), linear-gradient(270deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .progress-95 {
-  background-image: linear-gradient(432deg, #2980B9 50%, transparent 50%, transparent), linear-gradient(270deg, #2980B9 50%, #f7f8f9 50%, #f7f8f9);
+  background-image: linear-gradient(432deg, #16A085 50%, transparent 50%, transparent), linear-gradient(270deg, #16A085 50%, #f7f8f9 50%, #f7f8f9);
 }
 .valign {
   display: table;
