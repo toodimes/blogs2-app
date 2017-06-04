@@ -1,56 +1,31 @@
-<div class="row">
-  <div class="col-lg-3 col-md-3 col-sm-3">
-    <% if current_user %>
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="text-center">
-            <p>
-              <img src="<%= current_user.avatars.last.image %>" alt="<%= current_user.name %> Avatar" class="img-circle img-thumbnail img-responsive">
-            </p>
-            <h3><%= current_user.name %></h3>
-            <h4 class="text-muted"><strong><%= current_user.tagline %></strong></h4>
-            <h5 class="text-muted"><strong><%= current_user.likes %></strong></h5>
-            <br>
-            <!-- <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-6"> -->
-                <!-- Add code to like user -->
-                <!-- a href="#" class="btn btn-primary btn-icon">
-                  <em class="fa fa-heart"></em>
-                  Like
-                </a>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-6"> -->
-                <!-- Add code for below button -->
-                <!-- <a href="#" class="btn btn-primary btn-icon">
-                  <em class="fa fa-twitter"></em>
-                  Follow
-                </a>
-              </div>
-            </div> -->
-          </div>
-        </div>
-      </div>   
-    <% else %>
-      <h1><a href="users/sign_in">Please Sign In</a></h1>
-    <% end %>
-  </div>
-  <div class="col-lg-6 col-md-6 col-sm-6">
-    <div class="panel panel-default">
+  <div class="col-lg-5 col-md-5 col-sm-5">
+    <div class="panel panel-primary">
+      <div class="panel-heading text-center">
+        <h3>Popular Posts</h3>
+      </div>
       <div class="panel-body">
-        <div class="text-center">
-          
-          
-        </div>
+        <% @popular_posts.each do |post| %>
+          <h3><a href="/posts/<%= post.id %>"><%= post.title[0..25] %>...</a></h3>
+          <p class="pull-right"><%= post.created_at.strftime("%A, %b %d") %></p>
+          <p><%= post.user.name %></p>
+          <!-- <p><%# post.content[0..50] %></p> -->
+        <% end %>
       </div>
     </div>
   </div>
-  <div class="col-lg-3 col-md-3 col-sm-3">
-    <div class="panel panel-default">
+
+  <div class="col-lg-4 col-md-4 col-sm-4">
+    <div class="panel panel-info">
+      <div class="panel-heading text-center">
+        <h3>Recent Posts</h3>
+      </div>
       <div class="panel-body">
-        <div class="text-center">
-          <h1><a href="posts/new"></a>New post code will go here</h1>
-        </div>
+        <% @recent_posts.each do |post| %>
+          <h3><a href="/posts/<%= post.id %>"><%= post.title[0..20] %>...</a></h3>
+          <p class="pull-right"><%= post.created_at.strftime("%A, %b %d") %></p>
+          <p><%= post.user.name %></p>
+          <!-- <p><%# post.content[0..50] %></p> -->
+        <% end %>
       </div>
     </div>
-  </div>  
-</div>
+  </div>

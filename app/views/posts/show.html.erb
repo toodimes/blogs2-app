@@ -1,0 +1,59 @@
+<div class="col-lg-9 col-md-9 col-sm-9">
+    <h3><%= @post.title %></h3>
+</div>
+<% if @post.post_images.exists? %>
+  <div class="col-lg-9 col-md-9 col-sm-9">
+      <div class="post-image img-thumbnail">
+        <img src="<%= @post.post_images.first.url %>" alt="<%= @post.post_images.first.description %>" class="img-responsive">
+        <div class="caption">
+          <p><%= @post.post_images.first.description %></p>
+        </div>
+      </div>
+  </div>
+<% end %>
+  <div class="col-lg-9 col-md-9 col-sm-9 post-tags">
+    By<button type="button" class="btn btn-link has-popover" data-toggle="popover" data-placement="top" title="<%= @post.user.name %>"><%= @post.user.name %></button>
+    in
+    <!-- ADD CATEGORY TAGS -->
+    <% @post.categories.each do |category| %>
+      <a href=""><%= category.name.capitalize %></a>,
+    <% end %>
+    Posted <%= @post.created_at.strftime("%b %d, %Y") %>
+    <!-- POPOVER CONTENT BELOW -->
+      <div id="popover-content" class="hide popover-content">
+        <div class="valign">
+          <div>
+            <div style="width: 100px; height: 120px">
+              <img src="<%= @post.user.avatars.last.image %>" class="img-rounded img-responsive" alt="">
+            </div>
+          </div>
+          <div>
+            <h4 class="shrink"> <b><%= @post.user.tagline %></b>
+            </h4>
+            <p class="text-center"><%= pluralize(@post.user.likes, "like") %></p>
+            <button class="btn btn-primary btn-small btn-block">Like</button>
+          </div>
+        </div>
+      </div>
+      <!-- END POPOVER CONTENT -->
+    <a href="/posts/<%= @post.id %>/like" type="button" class="btn btn-link btn-icon pull-right"><em class="fa fa-thumbs-o-up"></em>Like</a>
+    
+  </div>
+<div class="col-lg-9 col-md-9 col-sm-9">
+  <div class="post-content">
+    <p><%= @post.content %></p>
+    
+  </div>
+</div>
+<script>
+  $(document).ready(function() {
+    $('.has-tooltip').tooltip();
+    $('.has-popover').popover({
+      html: true,
+      trigger: 'focus',
+      content: function() {
+            return $('#popover-content').html();
+          }
+    });
+  });
+</script>
